@@ -1,0 +1,45 @@
+html {
+  background-color: #fafafa;
+}
+
+html, #appRoot {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+/* reusables */
+.center-box--wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 24em;
+  justify-content: center;
+  text-align: center;
+
+  .center-box--content {
+    flex: none;
+    max-width: 50%;
+    background-color: #ffffff;
+    padding: 50px;
+    border: 1px solid #e6e6ff;
+  }
+}
+
+$navbar--height: 0rem;
+$sidebar--height: calc(#{$navbar--height} - 1.5rem);
+$white: #ffffff;
+
+.is-fullheight {
+  min-height: calc(100vh - #{$sidebar--height});
+  max-height: calc(100vh - #{$sidebar--height});
+  height: calc(00vh - #{$sidebar--height});
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 100px;
+  padding: 30px 0;
+}

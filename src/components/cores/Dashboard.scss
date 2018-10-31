@@ -1,0 +1,18 @@
+.dashboard {
+  &.wrapper {
+    display: flex;
+    height: 100vh;
+
+    nav {
+      flex: 0 0 auto;
+      background-color: #ffffff;
+      display: flex;
+    }
+  
+    section {
+      flex: 1 1 auto;
+      overflow: auto;
+      background-color: #e6e6e6;
+    }
+  }
+}

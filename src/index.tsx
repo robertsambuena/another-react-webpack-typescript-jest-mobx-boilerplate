@@ -1,7 +1,9 @@
 import { configure } from 'mobx';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import './index.less';
+
+import '../public/globals.scss';
+import './index.scss';
 
 import { App } from './components/App';
 import { Debug } from './Debug';
@@ -20,7 +22,12 @@ declare global {
   interface Window {
     dataLayer: any;
     user: any;
+    rooms: any[];
+    messages: any[];
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('appRoot'));
+ReactDOM.render(
+  <App/>,
+  document.getElementById('appRoot'),
+);

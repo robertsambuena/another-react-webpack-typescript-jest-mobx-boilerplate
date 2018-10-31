@@ -1,0 +1,29 @@
+$sidebar--background-color: #332744; //#595BCD
+
+.fixed-sidebar {
+  background: $sidebar--background-color;
+  display: flex;
+  flex-direction: column;
+
+  .fixed-sidebar--top {
+    flex: 3;
+  }
+
+  .fixed-sidebar--bottom {
+    flex: 1;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+
+    &.fixed-sidebar--primary {
+      margin: 10px 0;
+    }
+
+    &.fixed-sidebar--settings {
+      align-self: flex-end;
+    }
+  }
+}

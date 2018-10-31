@@ -1,9 +1,8 @@
 import { action, observable } from 'mobx';
 import { inject, observer } from 'mobx-react';
 import * as React from 'react';
-import './Invite.less';
+import './Invite.scss';
 
-import { Item } from '../components/Item';
 import { IInvite, inviteStore } from '../stores/invite.store';
 
 @observer
@@ -17,8 +16,12 @@ export class Invite extends React.Component {
 
   public render() {
     return (
-      <div className="Invite">
-        {this.newInvite.url}
+      <div className="Invite center-box--wrapper">
+        <div className="Invite--Box center-box--content">
+          <div>
+            Please get your invite link <a>{this.newInvite.url}</a>.
+          </div>
+        </div>
       </div>
     );
   }

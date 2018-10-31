@@ -1,0 +1,19 @@
+$background-color: #e8d9d2;
+$background-color: #f6f6f6;
+
+.bowl {
+  .bowl--container {
+    display: flex;
+    height: 100vh;
+    background-color: $background-color;
+
+    .bowl--info {
+      flex: 0 0 auto;
+      padding: 2vh 18px;
+    }
+
+    .bowl--interactions {
+      flex: 1 1 auto;
+    }
+  }
+}

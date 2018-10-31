@@ -1,0 +1,25 @@
+$fixed-sidebar-link--width: 1.5em;
+
+.fixed-sidebar-link {
+  display: flex;
+  align-items: center;
+
+  a {
+    .icon {
+      border-radius: 50%;
+      z-index: 2;
+      height: ($fixed-sidebar-link--width + 1em);
+      width: ($fixed-sidebar-link--width + 1em);
+      color: #fff;
+
+      i.fas {
+        font-size: $fixed-sidebar-link--width;
+        z-index: 1;
+      }
+
+      &:hover {
+          color: #e6e6e6;
+      }
+    }
+  }
+}

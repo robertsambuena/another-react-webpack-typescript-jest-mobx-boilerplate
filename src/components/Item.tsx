@@ -1,7 +1,7 @@
 import { action, observable } from 'mobx';
 import { inject, observer } from 'mobx-react';
 import * as React from 'react';
-import './Invite.less';
+import './Invite.scss';
 
 import { IUser, userStore } from '../stores/user.store';
 

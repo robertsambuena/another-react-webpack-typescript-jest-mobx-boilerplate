@@ -1,0 +1,31 @@
+$room-selector--bg-top: #6EA3A6;
+$room-selector--bg-top: #6031a4;
+$room-selector--bg-bottom: #FFFFFF;
+
+.room-selector {
+  height: 96vh;
+  border: 1px solid #e6e6e6;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+
+  .room-selector--head {
+    flex: 1;
+    background-color: $room-selector--bg-top;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .room-selector--head-segment {
+      
+    }
+  }
+
+  .room-selector--options {
+    flex: 1;
+    background-color: $room-selector--bg-bottom;
+  }
+}
